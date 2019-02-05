@@ -15,8 +15,8 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+$router->get('show_banner', 'BannerController@index');
 $router->get('get_categories', 'CategoryController@index');
 $router->get('show_category/{id}', 'CategoryController@show');
-$router->get('show_banner', 'BannerController@index');
 $router->get('get_products', 'ProductsController@index');
 $router->get('get_product/{id}', 'ProductsController@show');

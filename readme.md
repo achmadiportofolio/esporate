@@ -19,3 +19,37 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## How To Run 
+git clone https://github.com/achmadiportofolio/esporate.git your_directory
+
+cd your_directory
+
+composer install 
+
+- edit your database config at .env
+
+php artisan migrate:fresh --seed
+
+php -S localhost:8001 -t public 
+
+
+
+## How To Acces 
+
+## Example Aplication route
+- to banner  
+http://localhost:8001/show_banner
+
+- to get categories 
+http://localhost:8001/get_categories?page=1&search=1
+
+- to get  products 
+http://localhost:8001/get_products?page=1&search=1&service_id=1
+
+- get product detail   
+http://localhost:8001/get_product/{product_id}
+
+
+
+
